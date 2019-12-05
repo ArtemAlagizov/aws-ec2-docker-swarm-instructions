@@ -78,8 +78,8 @@
     * commit code that would change something and see if it is deployed by mista travis
 
 
+**POLICY:**
 ```
-POLICY:
 {
     "Version": "2012-10-17",
     "Statement": [
