@@ -1,9 +1,9 @@
 # aws-ec2-docker-swarm-instructions
 
-* start new ec2 instance (i recommend this: Amazon Linux 2 AMI 2.0.20190823.1 x86_64 HVM gp2)
+* **start new ec2 instance (i recommend this: Amazon Linux 2 AMI 2.0.20190823.1 x86_64 HVM gp2)**
     * When launching the instance, uncheck “delete on termination” at 4. Add Storage to preserve data in case of instance restarts
     * The rest leave default
-* log in to the ec2
+* **log in to the ec2**
     * install git
     ```
     sudo yum install git -y
@@ -19,7 +19,7 @@
     ```
     sudo yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
     ```
-* log out and log in again (to be able to execute docker commands without sudo)
+* **log out and log in again (to be able to execute docker commands without sudo)**
     * clone your repo: 
     ```
     sudo git clone https://github.com/billiamdan/warmeup.git
@@ -40,7 +40,7 @@
     ```
     watch docker stack ps shadowMarathonStackk 
     ```
-* create User in AWS IAM to be able to execute commands with travis
+* **create User in AWS IAM to be able to execute commands with travis**
     * create a new policy
         * go to IAM => policies
         * create new policy (see policy below)
@@ -57,7 +57,7 @@
             * skip tags for now
             * at the next step you’ll see Access key ID and Secret access key
                 * download them as those are needed for Travis to access your ec2
-* set up travis env variables
+* **set up travis env variables**
     * INSTANCE_ID => get it in the Description section of your ec2
     * AWS_ACCESS_KEY => the Access key ID from above
     * AWS_SECRET_KEY => Secret access key from above
