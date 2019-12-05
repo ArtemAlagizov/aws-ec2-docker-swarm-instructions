@@ -56,7 +56,7 @@
     * **create a new policy**
         * go to IAM => policies
         * create new policy (see policy JSON version below)
-            * replace **us-east-2:650732200008** with region your ec2 instance is located at and your account id (can be seen in the Owner section of ec2 Description)
+            * replace **us-east-2:650732200008** with region your ec2 instance is located in and your account id (can be seen in the Owner section of ec2 Description)
     * **create group** 
         * go to IAM => groups
         * create new group
