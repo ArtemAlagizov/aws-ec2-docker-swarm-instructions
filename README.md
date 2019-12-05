@@ -52,7 +52,7 @@
     ```
     watch docker stack ps shadowMarathonStackk 
     ```
-* **create User in AWS IAM to be able to execute commands with travis**
+* **create User in AWS IAM to be able to execute commands from travis**
     * **create a new policy**
         * go to IAM => policies
         * create new policy (see policy JSON version below)
