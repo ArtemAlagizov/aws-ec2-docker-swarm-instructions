@@ -10,7 +10,7 @@
       * select your new elastic ip in EC2 > Elastic IP addresses
          * choose Actions => Associate Elastic IP address
          * associate your new elastic ip address with your running ec2 instance
-* **log in to the ec2**
+* **log in to the ec2** (using EC2 Instance Connect (browser-based SSH connection => right click on ec2 instance => connect)
     * **install git**
     ```
     sudo yum install git -y
