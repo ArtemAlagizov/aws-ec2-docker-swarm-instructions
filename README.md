@@ -91,6 +91,7 @@ POLICY:
             "Effect": "Allow",
             "Resource": [
                 "arn:aws:ec2:us-east-2:650732200008:instance/*",
+                "arn:aws:ssm:us-east-2:650732200008:*",
                 "arn:aws:ssm:us-east-2::document/AWS-RunShellScript"
             ]
         }
