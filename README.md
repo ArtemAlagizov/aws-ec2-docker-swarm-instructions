@@ -60,7 +60,7 @@
     * **create group** 
         * go to IAM => groups
         * create new group
-            * when creating the group attach the policy created above to the group
+            * when creating a group attach the policy created above to the group
     * **create a user**
         * go to IAM => users
         * add new user
