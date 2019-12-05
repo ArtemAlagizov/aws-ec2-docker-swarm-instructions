@@ -4,7 +4,12 @@
     * when launching the instance, uncheck “delete on termination” at 4. Add Storage to preserve data in case of instance restarts
     * the rest leave default
 * **attach elastic ip to the ec2 instance** (for the instance to have constant ip address, even after restarts)
-            
+    * go to EC2 > NETWORK & SECURITY > Elastic IP addresses
+      * choose Allocate Elastic IP address
+         * create the elastic ip
+      * select your new elastic ip in EC2 > Elastic IP addresses
+         * choose Actions => Associate Elastic IP address
+         * associate your new elastic ip address with your running ec2 instance
 * **log in to the ec2**
     * **install git**
     ```
@@ -58,13 +63,13 @@
             * in permissions step add the user to the group created above
             * skip tags for now
             * at the next step you’ll see Access key ID and Secret access key
-                * download them as those are needed for Travis to access your ec2
+                * download them as those are needed for travis to access your ec2
 * **set up travis env variables**
-      * INSTANCE_ID => get it in the Description section of your ec2
-      * AWS_ACCESS_KEY => the Access key ID from above
-      * AWS_SECRET_KEY => Secret access key from above
+    * INSTANCE_ID => get it in the Description section of your ec2
+    * AWS_ACCESS_KEY => the Access key ID from above
+    * AWS_SECRET_KEY => Secret access key from above
 * **try it out**
-      * commit code that would 
+    * commit code that would change something and see if it is deployed by mista travis
 
 
 ```
