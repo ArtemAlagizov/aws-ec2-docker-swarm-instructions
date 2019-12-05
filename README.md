@@ -68,7 +68,7 @@
             * in permissions step add the user to the group created above
             * skip tags for now
             * at the next step you’ll see Access key ID and Secret access key
-                * download them as those are needed for travis to access your ec2
+                * download them (as csv) as those are needed for travis to access your ec2
 * **set up travis env variables**
     * INSTANCE_ID => get it in the Description section of your ec2
     * AWS_ACCESS_KEY => the Access key ID from above
