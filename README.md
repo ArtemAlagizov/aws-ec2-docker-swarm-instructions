@@ -70,7 +70,7 @@
             * at the next step you’ll see Access key ID and Secret access key
                 * download them (as csv) as those are needed for travis to access your ec2
 * **set up travis env variables**
-    * in travis => warmeup build => options => settings you should have some env variables set. these are the ones we'll need to change:
+    * in travis => warmeup build => options => settings you should have some env variables set. these are the ones we'll need to change (remove them and add again):
       * INSTANCE_ID => get it in the Description section of your ec2
       * AWS_ACCESS_KEY => the Access key ID from above
       * AWS_SECRET_KEY => Secret access key from above
