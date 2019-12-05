@@ -1,7 +1,7 @@
 # aws-ec2-docker-swarm-instructions
 
 * **start new ec2 instance** (i recommend this: Amazon Linux 2 AMI 2.0.20190823.1 x86_64 HVM gp2)
-    * when launching the instance, uncheck “delete on termination” at 4. Add Storage to preserve data in case of instance restarts
+    * when launching the instance, uncheck “delete on termination” at **4. Add Storage** to preserve data in case of instance restarts
     * the rest leave default
 * **attach elastic ip to the ec2 instance** (for the instance to have constant ip address, even after restarts)
     * go to EC2 > NETWORK & SECURITY > Elastic IP addresses
