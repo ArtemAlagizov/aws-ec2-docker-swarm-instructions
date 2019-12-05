@@ -39,6 +39,10 @@
     ```
     docker swarm init --advertise-addr <private ip address of the ec2> # can be found in the Description section of the ec2
     ```
+    * **go to your checked out repo** (to be in the same folder docker-compose.depl.yml file is)
+    ```
+    cd warmeup
+    ```
     * **deploy your stack of services using docker-compose.depl.yml**
     ```
     docker stack deploy shadowMarathonStackk -c docker-compose.depl.yml
