@@ -26,7 +26,7 @@
     ```
     sudo yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
     ```
-* **log out and log in again (to be able to execute docker commands without sudo)**
+* **log out and log in again** (to be able to execute docker commands without sudo)
     * **clone your repo**: 
     ```
     sudo git clone https://github.com/billiamdan/warmeup.git
