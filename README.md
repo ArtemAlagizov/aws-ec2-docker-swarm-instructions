@@ -38,6 +38,7 @@
     * **start docker swarm cluster**
     ```
     docker swarm init --advertise-addr <private ip address of the ec2> # can be found in the Description section of the ec2
+    # example: docker swarm init --advertise-addr 172.31.5.67
     ```
     * **go to your checked out repo** (to be in the same folder docker-compose.depl.yml file is)
     ```
