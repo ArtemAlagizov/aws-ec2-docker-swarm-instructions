@@ -28,9 +28,14 @@
     sudo service docker start
     sudo usermod -a -G docker ec2-user
     ```
-    * **install ssm agent** (for travis to be able to execute commands)
+    * **install ssm agent** (for travis to be able to execute commands and have access to ec2 instance)
     ```
     sudo yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
+    ```
+    * **start ssm agent** 
+    ```
+    sudo systemctl enable amazon-ssm-agent
+    sudo systemctl start amazon-ssm-agent
     ```
 * **log out and log in again** (to be able to execute docker commands without sudo)
     * **clone your repo**: 
