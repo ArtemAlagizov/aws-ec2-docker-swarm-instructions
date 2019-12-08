@@ -37,6 +37,10 @@
     sudo systemctl enable amazon-ssm-agent
     sudo systemctl start amazon-ssm-agent
     ```
+    * **check that the ssm agent is running** 
+    ```
+    sudo systemctl status amazon-ssm-agent
+    ```
 * **log out and log in again** (to be able to execute docker commands without sudo)
     * **clone your repo**: 
     ```
