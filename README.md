@@ -10,6 +10,12 @@
       * select your new elastic ip in EC2 > Elastic IP addresses
          * choose Actions => Associate Elastic IP address
          * associate your new elastic ip address with your running ec2 instance
+* **allow indound traffic to the ec2 instance** (in case vpc that contains ec2 was created with default values, otherwise we'll need to change inbound traffic rules for vpc and subnet containing the ec2)
+    * go to EC2 > NETWORK & SECURITY > Security Groups
+      * choose Security Group associated with the ec2
+         * in the inbound tab add two records:
+           * All TCP - TCP - 0 - 65535 - 0.0.0.0/0
+           * All TCP - TCP - 0 - 65535 - ::/0
 * **log into the ec2** (using EC2 Instance Connect: browser-based SSH connection => right click on ec2 instance => connect)
     * **install git**
     ```
