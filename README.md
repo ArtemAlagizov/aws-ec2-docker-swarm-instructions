@@ -3,13 +3,13 @@
 ------
     This is a set of steps to setup ci/cd with travis, github, docker and aws.
 ------
-**PREREQISITES**
+**PREREQUISITES**
 ------
     accounts for:
       * github
       * docker hub
       * travis 
-      * aws
+      * aws (free tier is enough)
 ------
 **STEPS**
 ------
