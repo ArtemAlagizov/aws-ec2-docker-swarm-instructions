@@ -1,4 +1,8 @@
 # aws-ec2-docker-swarm-travis-ci-cd-instructions
+**DESCRIPTION**
+------
+    This is a set of steps to setup ci/cd with travis, github, docker and aws.
+------
 **PREREQISITES**
 ------
     accounts for:
