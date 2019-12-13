@@ -113,11 +113,11 @@
     AWS_SECRET_KEY => Secret access key from above
     DEPLOYMENT_REGION => region in which the ec2 is deployed, example: us-east-2
     DOCKER_IMAGE_TAG => tag for the docker image to be built, example: latest
-    DOCKER_PASSWORD => example: ••••••••••••••••
-    DOCKER_REPOSITORY => name of the docker hub repo, example: instability_client-app
+    DOCKER_PASSWORD => password for your docker-hub account, example: ••••••••••••••••
+    DOCKER_REPOSITORY => name of the docker-hub repo, example: instability_client-app
     DOCKER_SWARM_SERVICE_NAME => docker swarm cluster stack name, example: unstableStackk_client-app
-    DOCKER_USERNAME => docker hub repo image name, example: alagiz
-    IMAGE_NAME => docker hub repo image name, example: instability_client-app
+    DOCKER_USERNAME => docker-hub repo image name, example: alagiz
+    IMAGE_NAME => docker-hub repo image name, example: instability_client-app
     INSTANCE_ID => get it in the Description section of your ec2, example:  
     ```
 ------
