@@ -8,7 +8,7 @@
 ------
     accounts for:
       * github
-      * docker hub
+      * docker-hub
       * travis 
       * aws (free tier is enough)
 ------
