@@ -2,15 +2,19 @@
 **PREREQISITES**
 ------
     accounts for:
+      * github
       * docker hub
       * travis 
       * aws
 ------
 **STEPS**
 ------
-
+  repo level
+------
 * **add .travis.yml to your repo** (see example below)
-    * 
+------
+  aws level
+------
 * **start new ec2 instance** (i recommend using this as the image: Amazon Linux 2 AMI 2.0.20190823.1 x86_64 HVM gp2)
     * when launching the instance, uncheck “delete on termination” at **4. Add Storage** to preserve data in case instance restarts
     * the rest leave default
