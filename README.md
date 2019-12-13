@@ -103,10 +103,19 @@
   travis level
 ------
 * **set up travis env variables**
-    * in travis => warmeup build => options => settings you should have some env variables set. these are the ones we'll need to change (remove them and add again):
-      * INSTANCE_ID => get it in the Description section of your ec2
-      * AWS_ACCESS_KEY => the Access key ID from above
-      * AWS_SECRET_KEY => Secret access key from above
+    * in travis => build => options => settings have env variables set:
+    ```
+    AWS_ACCESS_KEY => the Access key ID from above 
+    AWS_SECRET_KEY => Secret access key from above
+    DEPLOYMENT_REGION => region in which the ec2 is deployed, example: us-east-2
+    DOCKER_IMAGE_TAG => tag for the docker image to be built, example: latest
+    DOCKER_PASSWORD => example: ••••••••••••••••
+    DOCKER_REPOSITORY => name of the docker hub repo, example: instability_client-app
+    DOCKER_SWARM_SERVICE_NAME => docker swarm cluster stack name, example: unstableStackk_client-app
+    DOCKER_USERNAME => docker hub repo image name, example: alagiz
+    IMAGE_NAME => docker hub repo image name, example: instability_client-app
+    INSTANCE_ID => get it in the Description section of your ec2, example:  
+    ```
 ------
 * **try it out**
     * commit code that would change something and see if it is deployed by mista travis
