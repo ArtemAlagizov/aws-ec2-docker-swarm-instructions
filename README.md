@@ -2,6 +2,7 @@
 **DESCRIPTION**
 ------
     This is a set of steps to setup ci/cd with travis, github, docker and aws.
+    Example repo: https://github.com/ArtemAlagizov/instability
 ------
 **PREREQUISITES**
 ------
