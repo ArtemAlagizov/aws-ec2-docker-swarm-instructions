@@ -87,7 +87,7 @@
     ```
     watch docker stack ps shadowMarathonStackk 
     ```
-* **attach AmazonSSMManagedInstanceCore IAM Role to the EC2 to be able to execute ssm commands**
+* **attach AmazonSSMManagedInstanceCore IAM Role to the ec2 instance** (to be able to execute ssm commands)
     * right click on ec2 and choose **Instance settings** -> **Attach/replace IAM role**
     * click **Create new IAM role**
       * in **Choose the service that will use this role** section choose EC2
