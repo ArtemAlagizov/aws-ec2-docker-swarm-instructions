@@ -14,9 +14,9 @@
 ------
 **STEPS**
 ------
-  repo level
+  github repo level
 ------
-* **add .travis.yml to your repo** (see example below)
+* **add .travis.yml to your repo** (see example for node.js based service below)
 ------
   aws level
 ------
