@@ -132,6 +132,9 @@
 * **try it out**
     * commit code that would change something and see if it is deployed by mista travis
 ------
+------
+  *code samples*
+------
 
 **TRAVIS.YML**
 ```
@@ -169,7 +172,7 @@ script:
         fi
 #TODO: concatenating strings as in --parameters above introduces vulnerability of possible command injection, it needs to change
 ```
-**POLICY:**
+**POLICY for TRAVIS role:**
 ```
 {
     "Version": "2012-10-17",
